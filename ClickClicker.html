@@ -4,18 +4,48 @@
 
 <!-- Head Tag-->
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <title>Click Clicker</title>
 <h1>Click Clicker</h1>
+<div class="borderArea" style="display: inline">
+<div id="ClickWorkspaceTab" class="tab" style="display:inline">Click Workspace</div><div style="display:inline"> | </div>
+<div id="ClickStoreTab" class="tab" style="display:inline">Click Store</div><div style="display:inline"> | </div>
+<div id="ClickBank" class="tab" style="display:inline">Click Bank</div>
+</div>
 </head>
 
 <!-- Body Tag -->
 <body>
-<button class="btn" onClick=clickF()>Click</button>
+<div class="borderArea" id="ClickWorkspace" style="position:absolute;z-index:0">
+<br><button id="clickButton" class="btn" onClick=clickF()>Click</button>
 <br><br>Clicks: <div id="dispClicks" style="display:inline"></div>
+</div>
 
-<!-- Script File -->
+<!-- Script Files -->
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <script src="ClickClickerScript.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!--JQuery Script-->
+<script>
+$(document).ready(function(){
+	
+	$("#ClickWorkspaceTab").click(function(){
+		$("#ClickWorkspace").show();
+		
+		});
+		
+	$("#ClickStoreTab").click(function(){
+		$("#ClickWorkspace").hide();
+		
+		});
+		
+	$("#ClickBank").click(function(){
+		$("#ClickWorkspace").hide();
+		
+		});
+		
+});
+</script>
 </body>
 
 </html>

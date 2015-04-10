@@ -11,6 +11,10 @@ var updateDisplay = setInterval(updateDisplay, 100);
 
 //The updateDisplay Function
 function updateDisplay(){
+	//Removes focus from button
+	document.getElementById("clickButton").blur();
+	
+	//Updates Click display
 	dispClicks.innerHTML = clicks;
 }
 

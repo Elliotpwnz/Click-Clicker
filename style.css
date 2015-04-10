@@ -9,9 +9,35 @@
   padding: 4px 7px 4px 8px;
   border: solid #000000 1px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background: #c0c7cc;
   text-decoration: none;
+}
+
+.tab{
+  font-size: 26px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.borderArea{
+ border:solid 1px #a8a8a8;
+ width:auto;
+ padding: 10px;
+ -moz-border-radius-topleft: 0px;
+ -moz-border-radius-topright:0px;
+ -moz-border-radius-bottomleft:0px;
+ -moz-border-radius-bottomright:0px;
+ -webkit-border-top-left-radius:0px;
+ -webkit-border-top-right-radius:0px;
+ -webkit-border-bottom-left-radius:0px;
+ -webkit-border-bottom-right-radius:0px;
+ border-top-left-radius:0px;
+ border-top-right-radius:0px;
+ border-bottom-left-radius:0px;
+ border-bottom-right-radius:0px;
+ margin-top: 1cm;
 }
