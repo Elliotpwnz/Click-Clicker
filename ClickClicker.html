@@ -31,18 +31,24 @@ $(document).ready(function(){
 	
 	$("#ClickWorkspaceTab").click(function(){
 		$("#ClickWorkspace").show();
-		
-		});
+		document.getElementById("ClickWorkspaceTab").style.textDecoration = "underline";
+		document.getElementById("ClickStoreTab").style.textDecoration = "none";
+		document.getElementById("ClickBank").style.textDecoration = "none";
+	});
 		
 	$("#ClickStoreTab").click(function(){
 		$("#ClickWorkspace").hide();
-		
-		});
+		document.getElementById("ClickWorkspaceTab").style.textDecoration = "none";
+		document.getElementById("ClickStoreTab").style.textDecoration = "underline";
+		document.getElementById("ClickBank").style.textDecoration = "none";
+	});
 		
 	$("#ClickBank").click(function(){
 		$("#ClickWorkspace").hide();
-		
-		});
+		document.getElementById("ClickWorkspaceTab").style.textDecoration = "none";
+		document.getElementById("ClickStoreTab").style.textDecoration = "none";
+		document.getElementById("ClickBank").style.textDecoration = "underline";
+	});
 		
 });
 </script>
