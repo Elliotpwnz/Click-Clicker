@@ -22,6 +22,11 @@
   cursor: pointer;
 }
 
+.foot{
+   position:absolute;
+   bottom:0;
+}
+
 .borderArea{
  border:solid 1px #a8a8a8;
  width:auto;
@@ -39,4 +44,5 @@
  border-bottom-left-radius:0px;
  border-bottom-right-radius:0px;
  margin-top: 1cm;
+ margin-right: 2cm;
 }

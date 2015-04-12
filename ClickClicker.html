@@ -7,10 +7,15 @@
 <title>Click Clicker</title>
 <h1>Click Clicker</h1>
 <div class="borderArea" style="display: inline">
-<div id="ClickWorkspaceTab" class="tab" style="display:inline">Click Workspace</div><div style="display:inline"> | </div>
+<div id="ClickWorkspaceTab" class="tab" style="display:inline; text-decoration:underline">Click Workspace</div><div style="display:inline"> | </div>
 <div id="ClickStoreTab" class="tab" style="display:inline">Click Store</div><div style="display:inline"> | </div>
 <div id="ClickBank" class="tab" style="display:inline">Click Bank</div>
 </div>
+
+<div id="inventory" class="borderArea" style="float: right"><b>Inventory</b>
+				<br><hr>Clicks: <div id="dispClicksInv" style="display:inline"></div>
+				<br>Click-Bucks: <div id="dispClickBucksInv" style="display:inline"></div></div>	
+
 </head>
 
 <!-- Body Tag -->
@@ -53,5 +58,9 @@ $(document).ready(function(){
 });
 </script>
 </body>
+
+<footer>
+<div id="foot" class ="foot">Click Clicker by Elliot Simpson | <a href="https://github.com/Elliotpwnz/Click-Clicker">GitHub</a></div> 
+</footer>
 
 </html>
