@@ -9,7 +9,7 @@
 <div class="borderArea" style="display: inline">
 <div id="ClickWorkspaceTab" class="tab" style="display:inline; text-decoration:underline">Click Workspace</div><div style="display:inline"> | </div>
 <div id="ClickStoreTab" class="tab" style="display:inline">Click Store</div><div style="display:inline"> | </div>
-<div id="ClickBank" class="tab" style="display:inline">Click Bank</div>
+<div id="ClickBankTab" class="tab" style="display:inline">Click Bank</div>
 </div>
 
 <div id="inventory" class="borderArea" style="float: right"><b>Inventory</b>
@@ -25,6 +25,11 @@
 <br><br>Clicks: <div id="dispClicks" style="display:inline"></div>
 </div>
 
+<div class="borderArea" id="ClickBank" style="position:absolute;z-index:1">
+<br>
+<button id="convertButton" class="btn" onClick=convertButtonF()>Convert Clicks to Click-Bucks<br><div id="dispClickBuckValue" style="display:inline"></div></button>
+</div>
+
 <!-- Script Files -->
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <script src="ClickClickerScript.js"></script>
@@ -34,25 +39,31 @@
 <script>
 $(document).ready(function(){
 	
+		$("#ClickWorkspace").show();
+		$("#ClickBank").hide();
+	
 	$("#ClickWorkspaceTab").click(function(){
 		$("#ClickWorkspace").show();
+		$("#ClickBank").hide();
 		document.getElementById("ClickWorkspaceTab").style.textDecoration = "underline";
 		document.getElementById("ClickStoreTab").style.textDecoration = "none";
-		document.getElementById("ClickBank").style.textDecoration = "none";
+		document.getElementById("ClickBankTab").style.textDecoration = "none";
 	});
 		
 	$("#ClickStoreTab").click(function(){
 		$("#ClickWorkspace").hide();
+		$("#ClickBank").hide();
 		document.getElementById("ClickWorkspaceTab").style.textDecoration = "none";
 		document.getElementById("ClickStoreTab").style.textDecoration = "underline";
-		document.getElementById("ClickBank").style.textDecoration = "none";
+		document.getElementById("ClickBankTab").style.textDecoration = "none";
 	});
 		
-	$("#ClickBank").click(function(){
+	$("#ClickBankTab").click(function(){
 		$("#ClickWorkspace").hide();
+		$("#ClickBank").show();
 		document.getElementById("ClickWorkspaceTab").style.textDecoration = "none";
 		document.getElementById("ClickStoreTab").style.textDecoration = "none";
-		document.getElementById("ClickBank").style.textDecoration = "underline";
+		document.getElementById("ClickBankTab").style.textDecoration = "underline";
 	});
 		
 });
